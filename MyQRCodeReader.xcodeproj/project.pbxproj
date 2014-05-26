@@ -47,8 +47,8 @@
 		C11A8BA3193371E5004DD478 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C11A8BA6193371E6004DD478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C11A8BA9193371E6004DD478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C11A8BAB193371E6004DD478 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C11A8BAC193371E6004DD478 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C11A8BAB193371E6004DD478 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MyQRCodeReader/ViewController.h; sourceTree = "<group>"; };
+		C11A8BAC193371E6004DD478 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MyQRCodeReader/ViewController.m; sourceTree = "<group>"; };
 		C11A8BAE193371E6004DD478 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C11A8BB4193371E6004DD478 /* MyQRCodeReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyQRCodeReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11A8BB5193371E6004DD478 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -116,10 +116,8 @@
 			children = (
 				C11A8BA2193371E5004DD478 /* AppDelegate.h */,
 				C11A8BA3193371E5004DD478 /* AppDelegate.m */,
-				C11A8BA5193371E6004DD478 /* Main_iPhone.storyboard */,
-				C11A8BA8193371E6004DD478 /* Main_iPad.storyboard */,
-				C11A8BAB193371E6004DD478 /* ViewController.h */,
-				C11A8BAC193371E6004DD478 /* ViewController.m */,
+				C11A8BCC1933720E004DD478 /* Storyboards */,
+				C11A8BCB193371F7004DD478 /* ViewController */,
 				C11A8BAE193371E6004DD478 /* Images.xcassets */,
 				C11A8B9A193371E5004DD478 /* Supporting Files */,
 			);
@@ -153,6 +151,26 @@
 				C11A8BBE193371E6004DD478 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C11A8BCB193371F7004DD478 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C11A8BAB193371E6004DD478 /* ViewController.h */,
+				C11A8BAC193371E6004DD478 /* ViewController.m */,
+			);
+			name = ViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C11A8BCC1933720E004DD478 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C11A8BA5193371E6004DD478 /* Main_iPhone.storyboard */,
+				C11A8BA8193371E6004DD478 /* Main_iPad.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +310,7 @@
 				C11A8BA6193371E6004DD478 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
+			path = MyQRCodeReader;
 			sourceTree = "<group>";
 		};
 		C11A8BA8193371E6004DD478 /* Main_iPad.storyboard */ = {
@@ -300,6 +319,7 @@
 				C11A8BA9193371E6004DD478 /* Base */,
 			);
 			name = Main_iPad.storyboard;
+			path = MyQRCodeReader;
 			sourceTree = "<group>";
 		};
 		C11A8BBE193371E6004DD478 /* InfoPlist.strings */ = {
