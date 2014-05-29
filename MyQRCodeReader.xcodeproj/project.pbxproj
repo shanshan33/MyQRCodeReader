@@ -22,6 +22,8 @@
 		C11A8BB8193371E6004DD478 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11A8B97193371E5004DD478 /* UIKit.framework */; };
 		C11A8BC0193371E6004DD478 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C11A8BBE193371E6004DD478 /* InfoPlist.strings */; };
 		C11A8BC2193371E6004DD478 /* MyQRCodeReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11A8BC1193371E6004DD478 /* MyQRCodeReaderTests.m */; };
+		C11A8BCE19337CF0004DD478 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11A8BCD19337CF0004DD478 /* AVFoundation.framework */; };
+		C191E1C71937706800CB9ACA /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C191E1C61937706800CB9ACA /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		C11A8BBD193371E6004DD478 /* MyQRCodeReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyQRCodeReaderTests-Info.plist"; sourceTree = "<group>"; };
 		C11A8BBF193371E6004DD478 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C11A8BC1193371E6004DD478 /* MyQRCodeReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyQRCodeReaderTests.m; sourceTree = "<group>"; };
+		C11A8BCD19337CF0004DD478 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C191E1C61937706800CB9ACA /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A8BCE19337CF0004DD478 /* AVFoundation.framework in Frameworks */,
 				C11A8B96193371E5004DD478 /* CoreGraphics.framework in Frameworks */,
 				C11A8B98193371E5004DD478 /* UIKit.framework in Frameworks */,
 				C11A8B94193371E5004DD478 /* Foundation.framework in Frameworks */,
@@ -103,6 +108,7 @@
 		C11A8B92193371E5004DD478 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C11A8BCD19337CF0004DD478 /* AVFoundation.framework */,
 				C11A8B93193371E5004DD478 /* Foundation.framework */,
 				C11A8B95193371E5004DD478 /* CoreGraphics.framework */,
 				C11A8B97193371E5004DD478 /* UIKit.framework */,
@@ -120,6 +126,7 @@
 				C11A8BCB193371F7004DD478 /* ViewController */,
 				C11A8BAE193371E6004DD478 /* Images.xcassets */,
 				C11A8B9A193371E5004DD478 /* Supporting Files */,
+				C191E1C61937706800CB9ACA /* beep.mp3 */,
 			);
 			path = MyQRCodeReader;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11A8BAA193371E6004DD478 /* Main_iPad.storyboard in Resources */,
+				C191E1C71937706800CB9ACA /* beep.mp3 in Resources */,
 				C11A8BAF193371E6004DD478 /* Images.xcassets in Resources */,
 				C11A8BA7193371E6004DD478 /* Main_iPhone.storyboard in Resources */,
 				C11A8B9E193371E5004DD478 /* InfoPlist.strings in Resources */,
@@ -490,6 +498,7 @@
 				C11A8BC7193371E6004DD478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11A8BC8193371E6004DD478 /* Build configuration list for PBXNativeTarget "MyQRCodeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				C11A8BCA193371E6004DD478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
